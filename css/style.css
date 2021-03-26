@@ -1,4 +1,12 @@
-main > .container {
-    padding: 60px 15px 0;
+.navbar-brand {
+  background: url(../images/logo.png);
+  width:294px;
+  height:80px;
+}
+@media only screen and (max-width:800px) {
+  .navbar-brand {
+      background: url(../images/logo-small.png) no-repeat center;
+      width:150px;
   }
+}
   
