@@ -4,6 +4,7 @@
   height:80px;
   margin: 10px;
 }
+
 @media only screen and (max-width:800px) {
   .navbar-brand {
       background: url(../images/logo-small.png) no-repeat center;
