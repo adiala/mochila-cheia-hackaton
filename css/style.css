@@ -1,0 +1,110 @@
+
+
+@media only screen and (max-width:800px) {
+  .navbar {
+      background: url(../images/logo-small.png) no-repeat center;
+      width:150px;
+  }
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+.navContainer {
+  position: absolute;
+  width: 1920px;
+  height: 178px;
+  left: calc(50% - 1920px/2);
+  top: calc(50% - 178px/2 - 421px);
+}
+
+#logo{
+  position: absolute;
+  height: 43px;
+  width: 282px;
+  left: 99px;
+  top: 62px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.about{
+  position: absolute;
+  height: 43px;
+  width: 209px;
+  left: 1231px;
+  top: 56px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.rule{
+  position: absolute;
+  height: 46px;
+  width: 208px;
+  left: 1590px;
+  top: 56px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.bodyContainer{
+  height: 902px;
+  width: 1920px;
+  left: 0px;
+  top: 178px;
+  border-radius: 0px;
+  background-color: gray;
+  margin-left: 18px;
+}
+
+#donate{
+  position: absolute;
+  height: 86px;
+  width: 348px;
+  left: 165px;
+  top: 497px;
+  background: #C4C4C4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#donate:hover{
+  background-color: #FBC476;
+}
+
+#receive{
+  position: absolute;
+  height: 86px;
+  width: 348px; 
+  left: 673px;
+  top: 497px;
+  background: #C4C4C4;
+  border-radius: 10px;
+}
+
+#receive:hover{
+  background-color: #FBC476;
+}
+
+#indexImg{
+  position: absolute;
+  width: 519px;
+  height: 571px;
+  left: 1259px;
+  top: 310px;
+}
