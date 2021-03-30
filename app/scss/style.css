@@ -1,3 +1,7 @@
+.has-fade {
+  visibility: hidden;
+}
+
 @-webkit-keyframes fade-in {
   from {
     visibility: hidden;
@@ -8,6 +12,7 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -22,13 +27,14 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
 
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
@@ -62,8 +68,8 @@
 }
 
 .fade-out {
-  -webkit-animation: fade-out 300ms ease-in-out forwards;
-          animation: fade-out 300ms ease-in-out forwards;
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
 }
 
 html {
@@ -85,9 +91,18 @@ body {
   font-size: 1.125rem;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
   color: #000000;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .flex {
@@ -167,9 +182,8 @@ button:hover {
 }
 
 .header .overlay {
-  display: none;
   position: fixed;
-  top: 5.9375rem;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -186,8 +200,15 @@ button:hover {
 }
 
 .header nav {
+  position: relative;
   background-color: #fbb428;
-  padding: 1.25rem 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.header__logo img {
+  width: 14.1875rem;
+  height: 3.125rem;
 }
 
 .header__menu > span {
@@ -203,6 +224,26 @@ button:hover {
 
 .header__menu > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__toggle {
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem 0;
+  border-radius: 5px;
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header__toggle a {
+  display: block;
+  font-size: 0.9375rem;
+  text-align: center;
+  color: #2b6169;
+  padding: 0.625rem;
 }
 
 .header__links a {
