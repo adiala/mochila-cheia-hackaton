@@ -2,13 +2,14 @@
 
     nav {
         background-color: #FBB429;
+        padding: 1.25rem 1.5rem;
     }
 
     &__logo {
-        img {
-            width: 421px;
-            height: 115px; 
-        }
+        
+            img {
+            
+            }   
     }
 
     &__menu { // Mobile Menu
@@ -17,8 +18,7 @@
             display: block;
             width: 26px;
             height: 2px;
-            background-color: gray;
-            margin-right: 100px;
+            background-color: #2B626A;
 
             &:not(:last-child) {
                 margin-bottom: 3px;
@@ -27,8 +27,14 @@
     }
 
     &__links {
-       a {
+       
+        a {
            font-size: $font-med;
+        
+           &:not(:last-child) {
+               margin-right: 30px;
+
+           }
        }
     }
 }

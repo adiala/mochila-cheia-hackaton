@@ -14,7 +14,6 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: Lato, sans-serif;
-  font-weight: 700;
   font-size: 1.125rem;
 }
 
@@ -70,21 +69,28 @@ button {
   border: 0;
 }
 
-.header nav {
-  background-color: #FBB429;
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
 }
 
-.header__logo img {
-  width: 421px;
-  height: 115px;
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.header nav {
+  background-color: #FBB429;
+  padding: 1.25rem 1.5rem;
 }
 
 .header__menu > span {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: gray;
-  margin-right: 100px;
+  background-color: #2B626A;
 }
 
 .header__menu > span:not(:last-child) {
@@ -93,5 +99,9 @@ button {
 
 .header__links a {
   font-size: 1.125rem;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=style.css.map */
