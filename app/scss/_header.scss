@@ -1,13 +1,50 @@
 .header {
 
+    &.open {
+        
+        .header__menu {
+
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+    
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+    
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 5.9375rem;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($blue, transparent);
+
+        &.fade-in {
+            display: block;
+        }
+
+        &.fade-out {
+            display: none;
+        }
+    }
+
     nav {
-        background-color: #FBB429;
+        background-color: $yellow;
         padding: 1.25rem 1.5rem;
     }
 
     &__logo {
         
             img {
+                
             
             }   
     }
@@ -18,10 +55,12 @@
             display: block;
             width: 26px;
             height: 2px;
-            background-color: #2B626A;
+            background-color: $blue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
 
             &:not(:last-child) {
-                margin-bottom: 3px;
+                margin-bottom: 5px;
             }
         }
     }
@@ -29,10 +68,35 @@
     &__links {
        
         a {
-           font-size: $font-med;
+            position: relative;
+            font-size: $font-med;
+            transition: color 300ms ease-in-out;
         
            &:not(:last-child) {
-               margin-right: 30px;
+               margin-right: 1.875rem;
+
+           }
+
+           &::before {
+               content: "";
+               display:block;
+               position: absolute;
+               height: 5px;
+               left: 0;
+               right: 0;
+               bottom: -38px;
+               background: $blue;
+               opacity: 0;
+               transition: opacity 300ms ease-in-out;
+           }
+
+           &:hover {
+               color: $blue;
+
+               &::before {
+                   opacity: 1;
+                
+               }
 
            }
        }
