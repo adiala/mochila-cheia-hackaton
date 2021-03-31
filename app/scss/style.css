@@ -95,14 +95,20 @@ body.no-scroll {
   overflow: hidden;
 }
 
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
   color: #000000;
 }
 
 .container {
-  padding-left: 1.5rem;
+  padding-top: 2.25rem;
   padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -129,9 +135,10 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
-button {
-  padding: 48px 148px;
-  font-size: 1.125rem;
+.button {
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  font-size: 0.9375rem;
   cursor: pointer;
   border: 0;
   border-radius: 20px;
@@ -141,7 +148,7 @@ button {
   transition: opacity 300ms ease-in-out;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.75;
 }
 
@@ -277,5 +284,42 @@ button:hover {
 
 .header__links a:hover::before {
   opacity: 1;
+}
+
+.hero__image {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
+.hero__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/undraw_true_friends_c94g.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 1.15;
+  color: #2b6169;
+  margin-bottom: 0.62rem;
+}
+
+.hero__text p {
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */
