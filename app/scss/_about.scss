@@ -1,5 +1,4 @@
-.hero {
-    margin-bottom: 33px;
+.about {
 
    .container {
         @include breakpoint-up(large) {
@@ -10,16 +9,16 @@
 
     &__image {
         position: relative;
-        background-image: url('../../images/undraw_true_friends_c94g-desktop.svg');
-        background-size: cover;
+        background-image: url('../../images/undraw_well_done_i2wr.svg');
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
         min-height: 17.5rem;
 
         @include breakpoint-up(large) {
-            flex: 3;
-            order: 2;
-            background-size: 125%;
+            flex: 4;
+            order: 1;
+            background-size: 100%;
             min-height: 50rem;
         }
 
@@ -35,19 +34,21 @@
     }
 
     &__text {
-
+        background-color: $yellow;
         text-align: center;
+        padding: 20px;
 
         @include breakpoint-up(large) {
+            padding: 40px;
             flex: 2;
-            order: 1;
-            text-align: left;
+            order: 2;
+            margin-left: 100px;
         }
 
         h1 {
             font-weight: 700;
             font-size: $font-big;
-            line-height: 1.15;
+            line-height: 1.30;
             color: $blue;
             margin-top: 10px;
             margin-bottom: 0.62rem;
@@ -58,7 +59,8 @@
         }
 
         p {
-            line-height: 1.5;
+            line-height: 1.6;
+            text-align: justify;
             font-size: $font-sm;
 
             @include breakpoint-up(large) {

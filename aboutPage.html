@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Projeto Mochila Cheia</title>
+    <link rel="stylesheet" href="./app/scss/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
-<header class="navContainer">
-    <div class="navbar">
-        <nav>
-            <img src="./images/logo.png" alt="Mochila Cheia" id="logo">
-        </nav>
-        <a class="about" href="#">Quem somos</a>
-        <a class="rule" href="#">Regulamento</a>
-    </div>    
-</header>
-
 <body>
-    <main container="bodyContainer">
-        <div class="title">
-            <h1 class="title">QUEM SOMOS</h1>
-        </div>
-        <div>
-            <img src="#" alt="Quem somos" class="sideImg">
-        </div>
-        <div class="aboutText">
-            <p class="aboutText">Composto por um time de  duas UXs e quatro desenvolvedores, o projeto "Mochila Cheia" surgiu através de uma etapa do hackaton proposto pelo Programa de Formação do FCamara. <br>
 
-                Sabendo-se das dificuldades enfrentadas pelas famílias de baixa renda no processo de aquisição de materiais escolares para seus filhos e do desejo das pessoas de querer ajudá-las , nos propomos a estabelecer uma ponte entre esses dois grupos, buscando uni-los em um único lugar.</p>
+    <header class="header">
+        <div class="overlay has-fade"></div>
+        <nav class="container-header flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="./images/logo.svg" alt="Mochila Cheia">
+            </a>
+            
+            <a id="btnHamburguer" href="#" class="header__menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="/aboutPage.html">Quem somos</a>
+                <a href="#">Regulamento</a>
+            </div>
+        </nav>
+
+        <div class="header__toggle has-fade">
+            <a href="#">Quem somos</a>
+            <a href="#">Regulamento</a>
+            <a href="#">Quero Doar</a>
+            <a href="#">Quero Receber</a>
+        </div>
+
+    </header>
+
+    <main class="about">
+        <div class="container">
+
+            <div class="about__image"></div>
+            <div class="about__text container--pall">
+
+                <h1>
+                    Quem Somos
+                </h1>
+            
+                <p>
+                    Somos um time de duas designers e quatro desenvolvedores. O projeto "Mochila Cheia" surgiu através de uma etapa do hackathon proposto pelo Programa de Formação do FCamara. 
+                    Sabendo das dificuldades enfrentadas por famílias de baixa renda no processo de aquisição de materiais escolares para crianças e adolescentes e do desejo das pessoas de ajudá-las, nos propomos a estabelecer uma ponte entre esses dois grupos, buscando uni-los em um único lugar.
+                </p>
+            </div>           
         </div>
     </main>
+
+    <footer class="footer"> 
+        <div class="footer__copyright">
+            &copy; Mochila Cheia. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="./app/js/script.js"></script>
+
 </body>
 
 </html>
