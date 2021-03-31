@@ -1,0 +1,25 @@
+.footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: $blue;
+        color: $white;
+        padding: 20px;
+
+        @include breakpoint-up(large) {
+            position:fixed;
+            text-align: end;
+            font-size: $font-med;
+        }
+
+        a {
+            color: $white;
+        }
+
+        &__copyright {
+            position: relative;
+            font-size: $font-sm;
+
+        }
+}

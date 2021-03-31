@@ -19,20 +19,13 @@
     }
 
     .overlay {
+        opacity: 0;
         position: fixed;
         top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
         background-image: linear-gradient($blue, transparent);
-
-        &.fade-in {
-            display: block;
-        }
-
-        &.fade-out {
-            display: none;
-        }
     }
 
     nav {
@@ -68,6 +61,7 @@
 
     &__toggle {
 
+        z-index: 1;
         background: $white;
         margin-top: 1.5rem;
         padding: 1.625rem 0;
@@ -93,6 +87,7 @@
         a {
             position: relative;
             font-size: $font-med;
+            color: $blue;
             transition: color 300ms ease-in-out;
         
            &:not(:last-child) {
