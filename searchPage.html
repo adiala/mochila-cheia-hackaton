@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Busca</title>
-    <link rel="stylesheet" href="./css/styleSP.css"/>
-    
+    <title>Projeto Mochila Cheia</title>
+    <link rel="stylesheet" href="./app/scss/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
-<<<<<<< HEAD
-<body onload="InserirEstados()">
 
-<!-- Navbar -->  
-<div class="container-lg">
+<body>
 
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        Mochila Cheia
-      </a>
-    </div>
-  </nav>
+    <header class="header">
+        <div class="overlay has-fade"></div>
+        <nav class="container-header flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="./images/logo.svg" alt="Mochila Cheia">
+            </a>
+            
+            <a id="btnHamburguer" href="#" class="header__menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="/aboutPage.html">Quem somos</a>
+                <a href="/rulesPage.html">Regulamento</a>
+            </div>
+        </nav>
+
+        <div class="header__toggle has-fade">
+            <a href="/aboutPage.html">Quem somos</a>
+            <a href="/rulesPage.html">Regulamento</a>
+            <a href="/donation.html">Quero Doar</a>
+            <a href="#">Quero Receber</a>
+        </div>
+
+    </header>
 
   <!-- Search Bar -->
   <div class="input-group mb-3">
@@ -92,19 +112,6 @@
         <td>Lucas</td>
         <td>Itapira</td>
         <td>São Paulo</td>
-=======
-<body>
-
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nome da Escola...">
-
-    <table id="myTable">
-      <thead class="header">
-        <th>Nome</th>
-        <th>Escola</th>
-      </thead>
-      <tbody>
-        <td>Lucas do Carmo Santos</td>
->>>>>>> d392747108e3e2f8edeb789a5de98dbf9fb19cbc
         <td>E.E. Benedito Flores de Azevedo</td>
       </tr>
       <tr>
@@ -121,6 +128,13 @@
       </tr>
     </table>
 
- <script src="js/main.js"></script>
+    <footer class="footer"> 
+      <div class="footer__copyright">
+          &copy; Mochila Cheia. Todos os direitos reservados.
+      </div>
+  </footer>
+
+  <script src="./app/js/script.js"></script>
+
 </body>
 </html>
