@@ -580,3 +580,25 @@ a, a:visited, a:hover {
   top: 15rem;
   left: 11rem;
 }
+
+.listOfMaterials{
+  position: absolute;
+  top: 15rem;
+  right: 13.5rem;
+  bottom: 11.5rem;
+  width: 39.125rem;
+  height: 35.063rem;
+  background-color: #fbb429;
+  border-radius: 1.25rem;
+  text-align: center;
+}
+
+.itensList{
+  background-color: white;
+  width: 33.375rem;
+  height: 21.313rem;
+  border-radius: 1.25rem;
+  margin-left: 3rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
