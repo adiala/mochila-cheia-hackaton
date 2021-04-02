@@ -524,3 +524,81 @@ a, a:visited, a:hover {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.inputLine{
+  padding:0.625rem;
+  border:0.125rem solid;
+  margin:0.625rem;
+  border-color: #fbb428;
+  border-radius: 1rem;
+  width: 43.75rem;
+  height: 4.5rem;
+}
+.inputLine>label{
+  position:absolute;
+  top: -0.063rem;
+  left: 1.25rem;
+  background-color:white;
+}
+
+.inputLine>input{
+  border:none;
+}
+
+#nameResp{
+  width: 40rem;
+  height: 2rem;
+}
+
+#cpfResp{
+  width: 40rem;
+  height: 2rem;
+}
+
+#telContact{
+  width: 40rem;
+  height: 2rem;
+}
+
+#kidName{
+  width: 40rem;
+  height: 2rem;
+}
+
+#kidSchool{
+  width: 40rem;
+  height: 2rem;
+}
+
+#kidRegister{
+  width: 40rem;
+  height: 2rem;
+}
+
+.formularioCadastro{
+  position: absolute;
+  top: 15rem;
+  left: 11rem;
+}
+
+.listOfMaterials{
+  position: absolute;
+  top: 15rem;
+  right: 13.5rem;
+  bottom: 11.5rem;
+  width: 39.125rem;
+  height: 35.063rem;
+  background-color: #fbb429;
+  border-radius: 1.25rem;
+  text-align: center;
+}
+
+.itensList{
+  background-color: white;
+  width: 33.375rem;
+  height: 21.313rem;
+  border-radius: 1.25rem;
+  margin-left: 3rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

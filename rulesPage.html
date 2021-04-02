@@ -4,32 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rules</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Projeto Mochila Cheia</title>
+    <link rel="stylesheet" href="./app/scss/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<header class="navContainer">
-    <div class="navbar">
-        <nav>
-            <img src="./images/logo.png" alt="Mochila Cheia" id="logo">
+<body>
+<header class="header">
+    <div class="overlay has-fade"></div>
+        <nav class="container-header flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="./images/logo.svg" alt="Mochila Cheia">
+            </a>
+            
+            <a id="btnHamburguer" href="#" class="header__menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="header__links hide-for-mobile">
+                <a href="/aboutPage.html">Quem somos</a>
+                <a href="/rulesPage.html">Regulamento</a>
+            </div>
         </nav>
-        <a class="about" href="#">Quem somos</a>
-        <a class="rule" href="#">Regulamento</a>
-    </div>    
 </header>
 
-<body>
     <main container="bodyContainer">
         <div class="title">
-            <h1 class="title">QUEM SOMOS</h1>
-        </div>
-        <div>
-            <img src="#" alt="Quem somos" class="sideImg">
+            <h1 class="flex flex-jc-c flex-ai-c">REGULAMENTO</h1>
         </div>
         <div class="rulesText">
-            <p class="rulesText">Texto Regras</p>
+            <p class="flex flex-jc-c flex-ai-c">Texto Regras</p>
         </div>
     </main>
-</body>
 
+<footer class="footer"> 
+    <div class="footer__copyright">
+        &copy; Mochila Cheia. Todos os direitos reservados.
+    </div>
+</footer>
+
+<script src="./app/js/script.js"></script>
+</body>
 </html>
