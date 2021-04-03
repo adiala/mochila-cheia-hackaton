@@ -1,12 +1,22 @@
-.donate {
+.donation {
     margin-bottom: 33px;
 
    .container {
+
         @include breakpoint-up(large) {
             display: flex;
             align-items: center;
         }
-   }
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        
+    }
 
     &__image {
         position: relative;
@@ -19,15 +29,17 @@
         @include breakpoint-up(large) {
             flex: 3;
             order: 2;
-            background-size: 100%;
+            background-size: 125%;
             min-height: 50rem;
         }
 
-        //&::before {
-            //content: "";
-            //position: absolute;
-            //background-repeat: no-repeat;
-        //}
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
 
     }
 
