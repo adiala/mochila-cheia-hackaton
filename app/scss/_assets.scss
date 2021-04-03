@@ -21,7 +21,6 @@
 }
 
 .kidsCard {
-    display: flex;
     align-items: center;
     background-color: $blue;
     border-radius: 20px;
@@ -58,4 +57,87 @@
     }
 
 }
+
+.kidsCard:hover {
+    opacity: 0.7;
+}
+
+// Caixa suspensa
+
+.popupbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    color: $white;
+    font-size: $font-med;
+    text-align: left;
+}
+
+.popupbox:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: $blue;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $white;
+  }
+  
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  
+  .popup .materials {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+  fieldset {
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+      margin-bottom: 10px;
+
+  }
+
+  .materials {
+      background-color: $white;
+      border-radius: 20px;
+      color: black;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .donation-image {
+    position: relative;
+    background-image: url('../../images/undraw_send_gift_7o4m.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 150px;
+  }
+  
+
 

@@ -87,6 +87,18 @@ a, a:visited, a:hover {
     &-ai-c {
         align-items: center;
     }
+
+    &-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      
+    &-column {
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
 }
 
 //buttons

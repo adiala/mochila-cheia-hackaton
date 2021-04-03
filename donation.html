@@ -56,7 +56,16 @@
             <input type="text" class="search" placeholder="Digite o nome da escola">
           </div>
         
-          <div class="kidsCard">
+          <a href="#popup1"><div class="kidsCard flex">
+            <div class="kidsCard__icon"></div>      
+            <div class="kidsCard__body">            
+              <div>Nome da Criança</div>
+              <div>Escola da Criança</div>            
+            </div>
+          </div>
+          </a>
+
+          <div class="kidsCard flex">
             <div class="kidsCard__icon"></div>      
             <div class="kidsCard__body">            
               <div>Nome da Criança</div>
@@ -64,7 +73,7 @@
             </div>
           </div>
 
-          <div class="kidsCard">
+          <div class="kidsCard flex">
             <div class="kidsCard__icon"></div>      
             <div class="kidsCard__body">            
               <div>Nome da Criança</div>
@@ -72,14 +81,105 @@
             </div>
           </div>
 
-          <div class="kidsCard">
-            <div class="kidsCard__icon"></div>      
-            <div class="kidsCard__body">            
-              <div>Nome da Criança</div>
-              <div>Escola da Criança</div>            
+          <div id="popup1" class="popupbox flex-ai-c">
+            <div class="popup">
+              <h2>LISTA DE MATERIAIS</h2>
+              <a class="close" href="#">&times;</a>
+              <div>
+                <fieldset class="flex-jc-c flex-column">
+                  <div>
+                    <input type="checkbox" id="caderno96" name="materiais" value="caderno96">
+                    <label for="caderno96">Caderno 96 Folhas</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno160" name="materiais" value="caderno160">
+                    <label for="caderno160">Caderno 160 Folhas</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno96" name="materiais" value="caderno96">
+                    <label for="caderno96">Agenda escolar</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno160" name="materiais" value="caderno160">
+                    <label for="caderno160">Lapis n2 (caixa)</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno96" name="materiais" value="caderno96">
+                    <label for="caderno96">Caderno de desenho</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno160" name="materiais" value="caderno160">
+                    <label for="caderno160">Cola bastão 10g</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno96" name="materiais" value="caderno96">
+                    <label for="caderno96">Régua de 30cm</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno160" name="materiais" value="caderno160">
+                    <label for="caderno160">Estojo</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno96" name="materiais" value="caderno96">
+                    <label for="caderno96">Mochila</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno160" name="materiais" value="caderno160">
+                    <label for="caderno160">Caneta marca texto</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno96" name="materiais" value="caderno96">
+                    <label for="caderno96">Lápis n6</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno160" name="materiais" value="caderno160">
+                    <label for="caderno160">Compasso</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno96" name="materiais" value="caderno96">
+                    <label for="caderno96">Esquadro transferidor</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="caderno160" name="materiais" value="caderno160">
+                    <label for="caderno160">Corretivo</label>
+                  </div>
+                </fieldset>
+
+                <div>
+                  <h2>Valor previsto:</h2>
+                  <a href="#popup2" class="button button__receber">CONFIRMAR</a>
+                </div>
+
+              </div>
             </div>
           </div>
-          
+
+          <div id="popup2" class="popupbox flex-ai-c">
+            <div class="popup">
+              <h2>PAGAMENTO</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="materials">
+                <div>
+                  <h2>Valor previsto:</h2>
+                  <a href="#popup3" class="button button__receber">CONFIRMAR</a>
+                </div>             
+
+              </div>          
+            </div>
+          </div>
+
+          <div id="popup3" class="popupbox flex-ai-c">
+            <div class="popup">
+              <h2>CONFIRMAÇÃO</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="materials">
+                <h2>AGRADECEMOS A SUA DOAÇÃO!</h2>
+                <div class="donation-image"></div>
+
+              </div>          
+            </div>
+          </div>
+      
       </div>
 
     </div>
