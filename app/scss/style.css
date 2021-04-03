@@ -578,12 +578,12 @@ a, a:visited, a:hover {
   background-repeat: no-repeat;
 }
 
-.donation__text {
+.donation__box {
   text-align: center;
 }
 
 @media (min-width: 64em) {
-  .donation__text {
+  .donation__box {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
@@ -594,7 +594,7 @@ a, a:visited, a:hover {
   }
 }
 
-.donation__text h1 {
+.donation__box h1 {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 1.15;
@@ -604,18 +604,18 @@ a, a:visited, a:hover {
 }
 
 @media (min-width: 64em) {
-  .donation__text h1 {
+  .donation__box h1 {
     font-size: 3.25rem;
   }
 }
 
-.donation__text p {
+.donation__box p {
   line-height: 1.5;
   font-size: 0.9375rem;
 }
 
 @media (min-width: 64em) {
-  .donation__text p {
+  .donation__box p {
     font-size: 1.125rem;
     font-weight: 400;
   }
