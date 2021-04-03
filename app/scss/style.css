@@ -212,6 +212,74 @@ a, a:visited, a:hover {
   }
 }
 
+.search {
+  border: 0.125rem solid;
+  border-color: #2b6169;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 19.75rem;
+  height: 3.5rem;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 64em) {
+  .search {
+    padding: 0.625rem;
+    border: 0.125rem solid;
+    margin: 0.625rem;
+    border-color: #2b6169;
+    border-radius: 1rem;
+    width: 100%;
+    height: 4.5rem;
+  }
+}
+
+.kidsCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2b6169;
+  border-radius: 20px;
+  height: 3.5rem;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 64em) {
+  .kidsCard {
+    padding: 0.625rem;
+    margin: 0.625rem;
+    border-color: #2b6169;
+    border-radius: 1rem;
+    width: 100%;
+    height: 4.5rem;
+  }
+}
+
+.kidsCard__body {
+  color: white;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+  .kidsCard__body {
+    font-size: 1.125rem;
+  }
+}
+
+.kidsCard__icon {
+  background-image: url("/images/card_aluno.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40px;
+  width: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 .header.open .header__menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -539,15 +607,6 @@ a, a:visited, a:hover {
   }
 }
 
-.donation .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .donation__image {
   position: relative;
   background-image: url("../../images/undraw_Gift_box_re_vau4.svg");
@@ -565,7 +624,7 @@ a, a:visited, a:hover {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    background-size: 125%;
+    background-size: 60%;
     min-height: 50rem;
   }
 }

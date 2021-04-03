@@ -9,15 +9,6 @@
         }
     }
 
-    .card {
-        display: flex;
-        align-items: center;
-    }
-
-    &__icon {
-        
-    }
-
     &__image {
         position: relative;
         background-image: url('../../images/undraw_Gift_box_re_vau4.svg');
@@ -29,7 +20,7 @@
         @include breakpoint-up(large) {
             flex: 3;
             order: 2;
-            background-size: 125%;
+            background-size: 60%;
             min-height: 50rem;
         }
 
