@@ -887,3 +887,16 @@
   top: 50.25rem;
   left: 89rem;
 }
+
+.constructImg{
+  width: 73rem;
+  height: 45rem;
+  background-image: url(../images/contruct.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 20rem;
+  left: 23rem;
+}
