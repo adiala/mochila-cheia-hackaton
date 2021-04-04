@@ -95,6 +95,11 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.title {
+  text-align: center;
+  padding-top: 30px;
+}
+
 h1, h2, h3 {
   margin-top: 0px;
 }
@@ -812,9 +817,9 @@ fieldset {
     text-shadow: 1px 1px 5px #666;
     -webkit-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-left: 45px;
-    margin-bottom: 43px;
+    margin-bottom: 40px;
   }
   .newChild #followChildButton {
     top: auto;
@@ -832,6 +837,53 @@ fieldset {
     transition: opacity 300ms ease-in-out;
     margin-left: 45px;
     margin-bottom: 43px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .formularioCadastro {
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    position: relative;
+  }
+  .formularioCadastro fieldset.inputLine, .formularioCadastro #nameResp, .formularioCadastro #cpfResp, .formularioCadastro #telContact, .formularioCadastro #kidName, .formularioCadastro #kidSchool, .formularioCadastro #kidRegister {
+    width: 18rem;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .listOfMaterials {
+    display: block;
+    position: relative;
+    padding: 0.5rem;
+    margin-bottom: 5px;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: auto;
+    height: auto;
+  }
+  .listOfMaterials h1 {
+    font-size: 1.125rem;
+    padding-top: 5px;
+  }
+  .listOfMaterials h1 .container--py {
+    padding-top: 1.25rem;
+    padding-bottom: 2.25rem;
+  }
+  .listOfMaterials .itensList {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 8rem;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
