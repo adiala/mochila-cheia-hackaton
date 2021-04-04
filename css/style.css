@@ -1,4 +1,4 @@
-.has-fade {
+  .has-fade {
     visibility: hidden;
   }
   
@@ -786,4 +786,104 @@
   letter-spacing: 0em;
   text-align: center;
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.childName{
+  background-color: #fbb429;
+  text-align: center;
+  border-radius: 1.25rem;
+  font-family: Lato;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  width: 39rem;
+  height: 8.25rem;
+  position: absolute;
+  top: 17rem;
+  left: 18.5rem;
+}
+
+.guyBook{
+  width: 39rem;
+  height: 19rem;
+  background-image: url(../images/book_guy.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 17.25rem;
+  left: 82rem;
+}
+
+.processNum{
+  background-color: #fbb429;
+  text-align: center;
+  border-radius: 1.25rem;
+  font-family: Lato;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  width: 13.5rem;
+  height: 8.25rem;
+  position: absolute;
+  top: 27rem;
+  left: 18.5rem;
+}
+
+.receiveValue{
+  background-color: #fbb429;
+  text-align: center;
+  border-radius: 1.25rem;
+  font-family: Lato;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  width: 32.5rem;
+  height: 8rem;
+  position: absolute;
+  top: 43rem;
+  left: 89rem;
+}
+
+.Materials{
+  width: 39.125rem;
+  height: 35.063rem;
+  background-color: #fbb429;
+  border-radius: 1.25rem;
+  text-align: center;
+  position: absolute;
+  top: 37rem;
+  left: 18.5rem;
+}
+
+#rescueButton{
+  background-color: #fbb429;
+  text-align: center;
+  border-radius: 1.25rem;
+  font-family: Lato;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  width: 33rem;
+  height: 7.5rem;
+  position: absolute;
+  top: 55.25rem;
+  left: 89rem;
 }
