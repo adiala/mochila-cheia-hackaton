@@ -6,7 +6,7 @@
         background-color: $blue;
         color: $white;
         padding: 20px;
-
+        
         @include breakpoint-up(large) {
             position:fixed;
             text-align: end;
