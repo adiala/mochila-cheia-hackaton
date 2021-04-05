@@ -153,6 +153,7 @@
     min-height: 300px;
 
     @include breakpoint-up(large) {
+        background-size: 40%;
         min-height: 500px;
     }
   }
