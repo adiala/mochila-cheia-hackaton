@@ -385,6 +385,12 @@ fieldset {
   min-height: 150px;
 }
 
+@media (min-width: 64em) {
+  .donation-image {
+    min-height: 500px;
+  }
+}
+
 .header.open .header__menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);

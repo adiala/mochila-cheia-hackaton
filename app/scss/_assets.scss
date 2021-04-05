@@ -137,6 +137,10 @@
     background-repeat: no-repeat;
     background-position: center top;
     min-height: 150px;
+
+    @include breakpoint-up(large) {
+        min-height: 500px;
+    }
   }
   
 

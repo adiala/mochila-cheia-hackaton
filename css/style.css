@@ -61,7 +61,7 @@
     height: 35.063rem;
     background-color: #fbb429;
     border-radius: 1.25rem;
-    text-align: center;
+    text-align: left;
 }
 
 .itensList{
@@ -70,6 +70,7 @@
     height: 21.313rem;
     border-radius: 1.25rem;
     margin-left: 3rem;
+    padding: 10px;
     overflow-x: hidden;
     overflow-y: scroll;
   } 
