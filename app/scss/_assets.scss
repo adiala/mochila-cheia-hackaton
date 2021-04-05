@@ -86,12 +86,13 @@
   
   .popup {
     margin: 70px auto;
-    padding: 20px;
+    padding: 15px;
     background: $blue;
     border-radius: 5px;
     width: 90%;
     position: relative;
     transition: all 5s ease-in-out;
+    font-size: $font-sm;
   }
   
   .popup .close {
