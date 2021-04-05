@@ -25,3 +25,21 @@ mobMenu.addEventListener('click', function(){
         
     }
 });
+
+var Valor = 0;
+
+function updateLabel() {
+  var totalLabel = document.querySelector('#total');
+  totalLabel.innerHTML = Valor;
+}
+
+function handleClick(checkbox) {
+  if (checkbox.checked) {
+    Valor += parseFloat(checkbox.value);
+    updateLabel();
+    return;
+  }
+
+  Valor -= parseFloat(checkbox.value);
+  updateLabel();
+}
