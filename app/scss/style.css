@@ -331,13 +331,14 @@ a, a:visited, a:hover {
 
 .popup {
   margin: 70px auto;
-  padding: 20px;
+  padding: 15px;
   background: #2b6169;
   border-radius: 5px;
   width: 90%;
   position: relative;
   -webkit-transition: all 5s ease-in-out;
   transition: all 5s ease-in-out;
+  font-size: 0.9375rem;
 }
 
 .popup .close {
