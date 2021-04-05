@@ -886,4 +886,64 @@ fieldset {
     height: auto;
   }
 }
+
+@media (max-width: 39.9375em) {
+  .processoEmAndamento {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .processoEmAndamento .childName, .processoEmAndamento .guyBook, .processoEmAndamento .processNum, .processoEmAndamento .processNum, .processoEmAndamento .receiveValue, .processoEmAndamento .Materials, .processoEmAndamento .itenList, .processoEmAndamento #rescueButton {
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: auto;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+  }
+  .processoEmAndamento .guyBook {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    background-image: url(../../images/book_guy.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-height: 17.5rem;
+  }
+  .processoEmAndamento .childName, .processoEmAndamento .processNum, .processoEmAndamento .receiveValue {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 300px;
+    height: 50px;
+    line-height: 0;
+  }
+  .processoEmAndamento .Materials {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .processoEmAndamento .itensList {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 250px;
+    padding: 10px;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

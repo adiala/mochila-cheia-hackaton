@@ -1,0 +1,49 @@
+.processoEmAndamento {
+
+    @include breakpoint-down(small) {
+        display: flex;
+        flex-direction: column;
+        
+
+        .childName, .guyBook, .processNum, .processNum, .receiveValue, .Materials, .itenList, #rescueButton {
+            top: auto;
+            left:auto;
+            bottom: auto;
+            right: auto;
+            width: auto;
+            position:relative;
+            margin-bottom: 10px;
+            font-size: $font-med;
+        }
+        
+        .guyBook {
+            order:-1;
+            background-image: url(../../images/book_guy.svg);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            max-height: 17.5rem;
+        }
+
+        .childName, .processNum, .receiveValue {
+            align-self: center;
+            width: 300px;
+            height: 50px;
+            line-height: 0;
+        }
+
+        .Materials {
+            width: 300px;
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+        }
+
+        .itensList {
+            align-self: center;
+            width: 250px;
+            padding: 10px;
+            margin: 0;
+        }
+    }
+}
