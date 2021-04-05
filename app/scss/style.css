@@ -392,6 +392,21 @@ fieldset {
   }
 }
 
+.qr-code {
+  position: relative;
+  background-image: url("../../images/qr-code.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 300px;
+}
+
+@media (min-width: 64em) {
+  .qr-code {
+    min-height: 500px;
+  }
+}
+
 .header.open .header__menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
