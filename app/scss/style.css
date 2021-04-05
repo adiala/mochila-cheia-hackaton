@@ -403,7 +403,7 @@ fieldset {
 
 @media (min-width: 64em) {
   .qr-code {
-    background-size: 40%;
+    background-size: 30%;
     min-height: 500px;
   }
 }
