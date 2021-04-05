@@ -842,15 +842,30 @@ fieldset {
 
 @media (max-width: 39.9375em) {
   .formularioCadastro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: auto;
     left: auto;
     bottom: auto;
     right: auto;
     position: relative;
   }
-  .formularioCadastro fieldset.inputLine, .formularioCadastro #nameResp, .formularioCadastro #cpfResp, .formularioCadastro #telContact, .formularioCadastro #kidName, .formularioCadastro #kidSchool, .formularioCadastro #kidRegister {
+  .formularioCadastro .input-group {
     width: 18rem;
     font-size: 0.9375rem;
+  }
+  .formularioCadastro #nameResp, .formularioCadastro #cpfResp, .formularioCadastro #telContact, .formularioCadastro #kidName, .formularioCadastro #kidSchool, .formularioCadastro #kidRegister {
+    width: 15rem;
+    height: 1.9rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
   }
 }
 
@@ -884,6 +899,23 @@ fieldset {
     left: auto;
     width: auto;
     height: auto;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .buttonConfirm {
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 250px;
+    height: 50px;
   }
 }
 

@@ -1,4 +1,4 @@
- .inputLine{
+ .input-group {
     padding:0.625rem;
     border:0.125rem solid;
     margin:0.625rem;
@@ -7,16 +7,15 @@
     width: 43.75rem;
     height: 4.5rem;
   }
-.inputLine>label{
-    position:absolute;
-    top: -0.063rem;
-    left: 1.25rem;
-    background-color:white;
-  }
   
-.inputLine>input{
+.input-group>select { 
     border:none;
+    background-color: white;
   }
+
+.input-group>input {
+  border:none;
+}
 
 #nameResp{
     width: 40rem;
@@ -56,9 +55,8 @@
 
 .listOfMaterials{
     position: absolute;
-    top: 15rem;
-    right: 13.5rem;
-    bottom: 11.5rem;
+    left: 46.5rem;
+    top: 0rem;
     width: 39.125rem;
     height: 35.063rem;
     background-color: #fbb429;
@@ -80,8 +78,7 @@
     width: 23.5rem;
     height: 6.813rem;
     position: absolute;
-    top: 25rem;
-    left: 45rem;
+    top: 32rem;
     background-color: #fbb429;
     border-radius: 1.25rem;
     font-family: Lato;

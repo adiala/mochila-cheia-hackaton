@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./app/scss/style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
@@ -45,70 +44,63 @@
 
     </header>
 <!-- TITULO -->   
-        <main class="container container--px">
-            <div class="title">
-                <h1>FAZER NOVO CADASTRO</h1>
+    <main class="container container--px">
+        <div class="title">
+            <h1>FAZER NOVO CADASTRO</h1>
+        </div>
+<!-- FORMULÁRIO -->
+        <form class="contact-form formularioCadastro">                   
+            <div class="input-group">
+                <label for="nameResp">Nome do Responsável</label>
+                <input id="nameResp" name="nameResp" type="text"/>    
             </div>
-<!-- FORMULÁRIO -->            
-    <span class="formularioCadastro">        
-        <div>
-            <form id="nomeDoResponsavel" method="POST"></form>
-            <fieldset class="inputLine">
-                <legend>Nome do Responsável</legend>
-                <input type="text" id="nameResp" name="nameResp"><br><br>
-            </fieldset>
-            </form>    
-        </div>
-        <div>
-            <form id="cpfDoResponsavel" method="POST"></form>
-            <fieldset class="inputLine">
-                <legend>CPF do Responsável</legend>
-                <input type="text" id="cpfResp" name="cpfResp" maxlength="11"><br><br>
-            </fieldset>
-            </form>    
-        </div>
-        <div>
-            <form id="telefoneParaContato" method="POST"></form>
-            <fieldset class="inputLine">
-                <legend>Telefone para Contato</legend>
-                <input type="tel" id="telContact" name="telContact" maxlength="11"><br><br>
-            </fieldset>
-            </form>    
-        </div>
-        <div>
-            <form id="nomeDaCriança" method="POST"></form>
-            <fieldset class="inputLine">
-                <legend>Nome da Criança</legend>
-                <input type="text" id="kidName" name="kidName"><br><br>
-            </fieldset>
-            </form>    
-        </div>
-        <div>
-            <form id="escolaDaCriança" method="POST"></form>
-            <fieldset class="inputLine">
-                <legend>Escola da Criança</legend>
-                <input type="text" id="kidSchool" name="kidSchool"><br><br>
-            </fieldset>
-            </form>    
-        </div>
-        <div>
-            <form id="raDaCriança" method="POST"></form>
-            <fieldset class="inputLine">
-                <legend>R.A. da Criança</legend>
-                <input type="text" id="kidRegister" name="kidRegister"><br><br>
-            </fieldset>
-            </form>    
-        </div>
-    </span>    
-<!-- LISTA DE MATERIAIS -->   
-        <span class="listOfMaterials">
-            <h1 class="title">LISTA DE MATERIAIS</h1>
-            <div class="itensList">
-                             
+
+            <div class="input-group">
+                <label for="cpfResp">CPF do Responsável</label>
+                <input id="cpfResp" name="cpfResp" type="text"/>    
             </div>
-            <p>Valor Previsto:</p>
-        </span>  
-        </main>
+
+            <div class="input-group">
+                <label for="telContact">Telefone para Contato</label>
+                <input id="telContact" name="telContact" type="tel" maxlength="11"/>    
+            </div>
+
+            <div class="input-group">
+                <label for="kidName">Nome da Criança</label>
+                <input id="kidName" name="kidName" type="text"/>    
+            </div>
+
+            <div class="input-group">
+                <label for="kidSchool">Escola da Criança</label>
+                <select id="kidSchool" name="kidSchool">
+                    <option>Escola 1</option>
+                    <option>Escola 2</option>
+                    <option>Escola 3</option>
+                </select>    
+            </div>
+
+            <div class="input-group">
+                <label for="kidRegister">R.A. da Criança</label>
+                <input id="kidRegister" name="kidRegister" type="text"/>    
+            </div>
+
+            <div class="listOfMaterials">
+                <h1 class="title">LISTA DE MATERIAIS</h1>
+                <div class="itensList">
+                                 
+                </div>
+
+            </div>
+            <button type="submit" class="buttonConfirm">Cadastrar</button>
+        </form>
+
+        <!-- <div class="results">
+            <h2>Form Data</h2>
+            <pre></pre>
+        </div> -->   
+    </main>
+
+    
 <!-- RODAPÉ -->   
     <footer class="footer"> 
         <div class="footer__copyright">
@@ -116,6 +108,7 @@
         </div>        
     </footer>
 
+    <script src="./app/js/registroAlunos.js"></script>
     <script src="./app/js/script.js"></script>
 
 </body>
