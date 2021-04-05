@@ -29,8 +29,11 @@ mobMenu.addEventListener('click', function(){
 var Valor = 0;
 
 function updateLabel() {
-  var totalLabel = document.querySelector('#total');
-  totalLabel.innerHTML = Valor;
+  var totalLabel = document.querySelectorAll('.total');
+  for(let i = 0; i < totalLabel.length; i++){
+    totalLabel[i].innerHTML = Valor;
+  }
+  
 }
 
 function handleClick(checkbox) {
