@@ -3,6 +3,11 @@
     @include breakpoint-down(small) {
         display: flex;
         flex-direction: column;
+
+        .button {
+            align-self: center;
+            margin-bottom: 10px;
+        }
         
 
         .childName, .guyBook, .processNum, .processNum, .receiveValue, .Materials, .itenList, #rescueButton {

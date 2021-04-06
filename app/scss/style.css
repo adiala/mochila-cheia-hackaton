@@ -389,6 +389,7 @@ fieldset {
 @media (min-width: 64em) {
   .donation-image {
     min-height: 500px;
+    background-size: 60%;
   }
 }
 
@@ -950,6 +951,12 @@ fieldset {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .processoEmAndamento .button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 10px;
   }
   .processoEmAndamento .childName, .processoEmAndamento .guyBook, .processoEmAndamento .processNum, .processoEmAndamento .processNum, .processoEmAndamento .receiveValue, .processoEmAndamento .Materials, .processoEmAndamento .itenList, .processoEmAndamento #rescueButton {
     top: auto;

@@ -141,6 +141,7 @@
 
     @include breakpoint-up(large) {
         min-height: 500px;
+        background-size: 60%;
     }
   }
 
